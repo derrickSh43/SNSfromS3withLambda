@@ -4,6 +4,7 @@ import os
 
 sns_client = boto3.client('sns')
 
+# add Key:"SNS_TOPIC_ARN" and Value:"your SNS ARN here"
 SNS_TOPIC_ARN = os.environ['SNS_TOPIC_ARN']
 
 def lambda_handler(event, context):
